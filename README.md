@@ -9,3 +9,11 @@ Most of these are generic enough for general use. Some are likely to contain thi
 For internal systems, functions and information, I'll eventually create a system that will call a local config file that can be appended or whatever .
 
 For now, it's just a naive simple start... I'll find my collection of them as I start re-creating them again.
+
+## TODO
+Things that I still need to add or change
+
+* emacs configs
+* create a simpler tmux config... right now using a third party tmux config
+* add bash functions, aliases and added functionality
+
