@@ -5,8 +5,11 @@
 dotfiles=($(ls -d ${HOME}/dotfiles/.[^#.]*))
 
 for dotfile in ${dotfiles[@]}; do
-
-    if [[ ! -d ${dotfile} ]]; then
+    printf "dotfile: ${dotfile}\n"
+    if [[ ${dotfile} == ${HOME}/dotfiles/.git ]]; then
+	printf "Ignoring .git directory\n"
+	continue
+    elif [[ ! -d ${dotfile} ]]; then
 	printf "unlinking ${dotfile}\n"
 	rm  ${HOME}/${dotfile##*/}
     elif [[ -d ${dotfile} ]]; then
