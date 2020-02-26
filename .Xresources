@@ -11,6 +11,10 @@ URxvt*iso14755: false
 URxvt*iso14755_52: false
 
 XTerm*ttymodes: erase ^? kill ^U intr ^C quit ^\ eof ^D susp ^Z start ^Q stop ^S eol ^@
+
+URxvt*selectToClipboard: true
+URxvt*disallowedWindowOps: 20,21,SetXProp
+
 URxvt*geometry:   75x18
 URxvt*saveLines: 12000
 URxvt*termName:         rxvt-unicode-256color
