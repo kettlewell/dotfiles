@@ -10,6 +10,13 @@
 URxvt*iso14755: false
 URxvt*iso14755_52: false
 
+! https://github.com/simmel/urxvt-resize-font/blob/master/resize-font
+URxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
+URxvt.resize-font.smaller: C-minus
+URxvt.resize-font.bigger:  C-equal
+URxvt.resize-font.reset:  C-0
+
+
 XTerm*ttymodes: erase ^? kill ^U intr ^C quit ^\ eof ^D susp ^Z start ^Q stop ^S eol ^@
 
 URxvt*selectToClipboard: true
@@ -30,40 +37,19 @@ URxvt.transparent:      false
 URxvt*allow_bold:       true
 URxvt*colorUL:          #86a2b0
 
-!URxvt.dpi:              166
+URxvt*font:xft:Source\\ Code\\ Pro\\ Medium:size=12:antialias=true:hinting=true,xft:Source\\ Code\\ Pro\\ Regular:size=12:antialias=true:hinting=true
 
-!URxvt*font:xft:Menlo for Powerline:regular:size=12
-
-
-URxvt*font:xft:Source\\ Code\\ Pro\\ Medium:size=14:antialias=true:hinting=true,xft:Source\\ Code\\ Pro\\ Medium:size=16:antialias=true:hinting=true
-! URxvt*font:xft:Source Code Pro for Powerline,Sauce Code Powerline:style=Regular
-
-!URxvt*font: xft:DejaVu Sans Mono:pixelsize=18:antialias=true:hinting=true
-!URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=18:antialias=true:hinting=true
-!URxvt*font:             xft:terminus:pixelsize=10
-!URxvt*boldFont:         xft:terminus:pixelsize=10
-
-! xft fonts 
-!------------------------------------------------------------------
-
-!Xft.dpi:        166
 Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.lcdfilter:  lcddefault
 Xft.hinting:    true
 Xft.hintstyle:  hintfull
 
-! xterm 
-!----------------------------------------------------------------------
-
-! xterm*faceName: xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true
 
 ! urxvt 
 !---------------------------------------------------------------------
 
 !URxvt*letterSpace:  1
-
-! http://www.xcolors.net/dl/thwump
 
 ! black + grey
 URxvt*color0:  #202020
@@ -120,6 +106,19 @@ URxvt*color15: #f0f0f0
 
 ! http://www.xcolors.net/dl/Tartan
 
+
+!URxvt.dpi:              166
+!URxvt*font:xft:Menlo for Powerline:regular:size=12
+! URxvt*font:xft:Source Code Pro for Powerline,Sauce Code Powerline:style=Regular
+!URxvt*font: xft:DejaVu Sans Mono:pixelsize=18:antialias=true:hinting=true
+!URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=18:antialias=true:hinting=true
+!URxvt*font:             xft:terminus:pixelsize=10
+!URxvt*boldFont:         xft:terminus:pixelsize=10
+
+! xft fonts 
+!------------------------------------------------------------------
+
+!Xft.dpi:        166
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!~~~~~~
