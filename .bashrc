@@ -16,3 +16,9 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+
+# Requires https://github.com/magicmonty/bash-git-prompt
+if [ -f "$HOME/git/bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source $HOME/git/bash-git-prompt/gitprompt.sh
+fi
