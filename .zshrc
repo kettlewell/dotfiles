@@ -11,7 +11,12 @@ export ZSH="${HOME}/dotfiles/zsh"
 #echo "ZSH: ${ZSH}"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="clean"
+#ZSH_THEME="gentoo"
+#ZSH_THEME="geoffgarside"
+ZSH_THEME="jreese"
+
 
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -117,7 +122,7 @@ for plugin ($ZSH/plugins/**/*.plugin.zsh); do
   #if is_plugin $ZSH_CUSTOM $plugin; then
   #  fpath=($ZSH_CUSTOM/plugins/$plugin $fpath)
   if is_plugin $plugin; then
-    echo "[oh-my-zsh] plugin '${plugin%/*}' FOUND"
+    # echo "[oh-my-zsh] plugin '${plugin%/*}' FOUND"
     fpath=(${plugin%/*} $fpath)
   else
     echo "[oh-my-zsh] plugin '${plugin%/*}' not found"
@@ -152,7 +157,7 @@ fi
 # Load all of the config files in ~/oh-my-zsh that end in .zsh
 # TIP: Add files you don't want in git to .gitignore
 for config_file ($ZSH/lib/*.zsh); do
-    echo "[oh-my-zsh] config_file '$config_file'"
+  #echo "[oh-my-zsh] config_file '$config_file'"
   custom_config_file="${ZSH_CUSTOM}/lib/${config_file:t}"
   [ -f "${custom_config_file}" ] && config_file=${custom_config_file}
   source $config_file
@@ -160,7 +165,7 @@ done
 
 # Load all of the plugins that were defined in ~/.zshrc
 for plugin ($ZSH/plugins/**/*.plugin.zsh); do
-    echo "[oh-my-zsh] plugin '$plugin'"
+   #echo "[oh-my-zsh] plugin '$plugin'"
    if [ -f $plugin ]; then
       source $plugin
    fi
